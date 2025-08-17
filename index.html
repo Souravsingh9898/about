@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourav Singh | Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourav Singh | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #00e6e6;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      color: #ccc;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: slideUp 1.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0px 8px 20px rgba(0, 230, 230, 0.4);
+    }
+
+    .card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #00e6e6;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #00e6e6;
+      color: #000;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00cccc;
+    }
+
+    /* Animations */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="overlay"></div>
+  <header>
+    <h1>Sourav Singh</h1>
+    <h2>MIS Specialist | AI Specialist</h2>
+  </header>
 
-    <header class="header">
-        <div class="profile-intro">
-            <h1 class="name">Sourav Singh</h1>
-            <h2 class="role">Customer Support Executive</h2>
-            <p class="tagline">Results-driven professional with expertise in email, chat support, and MIS reporting.</p>
-            <a href="#awards" class="btn">View My Achievements</a>
-        </div>
-        <div class="profile-image">
-            <img src="sourav.jpg" alt="Sourav Singh">
-        </div>
-    </header>
+  <div class="container">
+    <div class="card">
+      <h3>About Me</h3>
+      <p>1 year 7 months of experience.<br>Religion: Hindu<br>Nationality: Indian</p>
+      <a href="about.html" class="btn">Get More</a>
+    </div>
 
-    <main>
-        <section id="skills" class="section">
-            <h2 class="section-title">Skills</h2>
-            <p class="section-subtitle">What I Excel At</p>
-            <div class="skills-grid">
-                <div class="skill-item">Microsoft Excel</div>
-                <div class="skill-item">MIS Reporting & Dashboard Preparation</div>
-                <div class="skill-item">Strong Communication and Interpersonal Skills</div>
-                <div class="skill-item">Documentation & Record Keeping</div>
-                <div class="skill-item">Data Analysis</div>
-                <div class="skill-item">Customer Support</div>
-            </div>
-        </section>
+    <div class="card">
+      <h3>Education</h3>
+      <p>Graduation and schooling background in Punjab & Bihar.</p>
+      <a href="education.html" class="btn">Get More</a>
+    </div>
 
-        <section id="experience" class="section">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My Career Journey</p>
-            <div class="experience-grid">
-                <div class="job-item">
-                    <h3>OnePlus Customer Support</h3>
-                    <p class="company">01/2025 - Nowadays</p>
-                    <ul>
-                        <li>Currently managing customer queries exclusively via chat.</li>
-                        <li>Delivering accurate and high-quality customer satisfaction.</li>
-                        <li>Consistently ranked in the Top 5 performers.</li>
-                    </ul>
-                </div>
-                <div class="job-item">
-                    <h3>Cogent (Client: Lenskart) | Customer support</h3>
-                    <p class="company">03/2024 - 10/2024</p>
-                    <ul>
-                        <li>Handled customer queries related to eyewear products.</li>
-                        <li>Collaborated with internal teams to maintain service quality.</li>
-                        <li>Achieved work-from-home eligibility in under 6 months.</li>
-                    </ul>
-                </div>
-                <div class="job-item">
-                    <h3>Konexion (Client: Airtel Enterprises) | Customer support</h3>
-                    <p class="company">09/2022 - 01/2023</p>
-                    <ul>
-                        <li>Managed and resolved customer queries related to international network.</li>
-                        <li>Promoted within 5 months to Advanced Level 2.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <div class="card">
+      <h3>Skills</h3>
+      <p>Advanced Excel, AI operations, Prompt engineering, MIS reporting.</p>
+      <a href="skills.html" class="btn">Get More</a>
+    </div>
 
-        <section id="education" class="section">
-            <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">My Academic Background</p>
-            <div class="education-grid">
-                <div class="degree-item">
-                    <h3>English Honours | IGNOU</h3>
-                    <p class="university">07/2022 - Nowadays</p>
-                </div>
-                <div class="degree-item">
-                    <h3>12th | Government boys senior secondary school</h3>
-                    <p class="university">04/2020 - 06/2021</p>
-                </div>
-                <div class="degree-item">
-                    <h3>10th | Government boys senior secondary school</h3>
-                    <p class="university">03/2018 - 04/2019</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="portfolio" class="section">
-            <h
+    <div class="card">
+      <h3>Experience</h3>
+      <p>Cogent E-services, Konextion Group, OnePlus.<br>1 year 7 months in customer support.</p>
+      <a href="experience.html" class="btn">Get More</a>
+    </div>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Email, LinkedIn & WhatsApp for quick communication.</p>
+      <a href="contact.html" class="btn">Get More</a>
+    </div>
+  </div>
+</body>
+</html>
