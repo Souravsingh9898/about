@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
@@ -36,6 +36,24 @@
     header h2 {
       font-size: 1.5rem;
       color: #ccc;
+    }
+
+    .profile-pic-small {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;       /* circle */
+      object-fit: cover;
+      background: transparent;  /* no background */
+      filter: brightness(0.9);  /* dim */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      margin-bottom: 15px;      /* space between img & name */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .profile-pic-small:hover {
+      transform: scale(1.05);
+      filter: brightness(1);
+      box-shadow: 0 0 15px rgba(0,212,255,0.8);
     }
 
     .container {
@@ -87,33 +105,23 @@
       background: #00cccc;
     }
 
-    /* Animations */
     @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
+
   <header>
+    <!-- ✅ Profile pic directly above name -->
+    <img src="dash.jpg" alt="Sourav Singh" class="profile-pic-small">
     <h1>Sourav Singh</h1>
     <h2>MIS Specialist | AI Specialist</h2>
   </header>
