@@ -1,33 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Experience | Sourav Singh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body{margin:0;font-family:'Segoe UI',sans-serif;background:url('https://images.unsplash.com/photo-1532618793072-8f9b6a675b34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;background-size:cover;color:#fff;}
-    .overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:-1;}
-    .content{max-width:900px;margin:60px auto;padding:30px;background:rgba(255,255,255,0.05);border-radius:15px;backdrop-filter:blur(10px);}
-    h1{color:#00e6e6;text-align:center;margin-bottom:30px;}
-    h2{color:#00cccc;margin-top:20px;}
-    p{color:#ddd;line-height:1.6;}
-    a{display:block;text-align:center;margin-top:20px;text-decoration:none;color:#00e6e6;}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      line-height: 1.7;
+      animation: slideUp 1.4s ease;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00e6e6;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    .job {
+      margin-bottom: 40px;
+      border-left: 3px solid #00e6e6;
+      padding-left: 15px;
+    }
+
+    .job h2 {
+      font-size: 1.3rem;
+      color: #00e6e6;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .job h3 {
+      font-size: 1rem;
+      color: #ccc;
+      margin: 5px 0 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      list-style: none;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: #00e6e6;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #00e6e6;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
+
   <div class="content">
-    <h1>Professional Experience</h1>
-    <h2>Cogent E-Services</h2>
-    <p>Role: Customer Support Executive <br>Responsibilities: Handling client queries, ticket management, and MIS reporting support.</p>
+    <h1><i class="fas fa-briefcase"></i> Work Experience</h1>
 
-    <h2>Konextion Group</h2>
-    <p>Role: MIS & Reporting Analyst <br>Responsibilities: Creating dashboards, Excel automation, and AI-based workflow improvement.</p>
+    <div class="job">
+      <h2><i class="fas fa-headset"></i> Cogent E-Services (Client: Lenskart)</h2>
+      <h3>Customer Support Executive | March 2024 – October 2024</h3>
+      <ul>
+        <li>Handled customer queries via chat and calls related to eyewear, orders, payments, and returns.</li>
+        <li>Ensured high satisfaction through fast and effective resolutions.</li>
+        <li>Collaborated with teams to resolve complex issues and maintain service quality.</li>
+        <li>Achieved work-from-home eligibility by exceeding KPIs consistently within 6 months.</li>
+        <li>Maintained top satisfaction scores during initial evaluation period.</li>
+      </ul>
+    </div>
 
-    <h2>OnePlus</h2>
-    <p>Role: Customer Support Associate <br>Responsibilities: Providing premium customer support and reporting escalation data.</p>
+    <div class="job">
+      <h2><i class="fas fa-signal"></i> Konextion Group (Client: Airtel Enterprises)</h2>
+      <h3>Customer Support Executive | September 2022 – January 2023</h3>
+      <ul>
+        <li>Resolved customer queries via phone/email on international network and payment issues.</li>
+        <li>Promoted to Level 2 Support within 5 months for handling escalations and process updates.</li>
+        <li>Assisted with MIS reporting and supported internal process improvements.</li>
+        <li>Outperformed senior advisors and secured one of only two performance-based promotions.</li>
+        <li>Maintained high accuracy and satisfaction in a fast-paced telecom environment.</li>
+      </ul>
+    </div>
 
-    <a href="index.html">← Back to Home</a>
+    <div class="job">
+      <h2 style="display: flex; align-items: center; gap: 10px;">
+  <!-- OnePlus SVG Logo -->
+  <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="5" width="90" height="90" stroke="#00e6e6" stroke-width="10"/>
+    <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="60" fill="#00e6e6" font-family="Arial, sans-serif">+1</text>
+  </svg>
+  OnePlus
+</h2>
+
+      <h3>Customer Support Associate (Chat) | January 2025 – Present</h3>
+      <ul>
+        <li>Managing customer interactions via live chat, offering quick and accurate solutions.</li>
+        <li>Consistently ranked among Top 5 performers for the past 4 months.</li>
+        <li>Maintaining high CSAT scores and fast resolution times.</li>
+        <li>Recognized internally for quality and awarded for outstanding performance.</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
   </div>
 </body>
 </html>

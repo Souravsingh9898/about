@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Sourav Singh</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -13,30 +15,107 @@
       background-size: cover;
       color: #fff;
     }
-    .overlay {position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:-1;}
-    .content {max-width: 800px;margin: 60px auto;padding: 30px;background: rgba(255,255,255,0.05);border-radius: 15px;backdrop-filter: blur(10px);}
-    h1 {color:#00e6e6;text-align:center;margin-bottom:20px;}
-    p {line-height:1.6;color:#ddd;}
-    a {display:block;text-align:center;margin-top:20px;text-decoration:none;color:#00e6e6;}
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.2s ease-in;
+    }
+    h1, h2 {
+      color: #00e6e6;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p, ul {
+      color: #ddd;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    li i {
+      margin-right: 10px;
+      color: #00e6e6;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #00e6e6;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
   <div class="content">
-    <h1>About Me</h1>
-    <p>Hi, I’m <b>Sourav Singh</b>, born on 4th September 2002 in Punjab. I lived there until 2014, after which my family and I shifted to Delhi. My roots are in Bihar, my primary education was in Punjab, and I’m currently pursuing my higher studies in Delhi.</p>
+    <h1><i class="fas fa-user"></i> About Me</h1>
 
-    <p>I have <b>1 year and 7 months of experience</b> in Customer Support, where I built strong communication skills and the ability to handle challenges effectively. Along with that, I’ve completed an advanced Excel course and gained good knowledge of other Microsoft tools.</p>
+    <ul>
+      <li><i class="fas fa-id-badge"></i> <strong>Name:</strong> Sourav Singh</li>
+      <li><i class="fas fa-birthday-cake"></i> <strong>Date of Birth:</strong> 4th September 2002</li>
+      <li><i class="fas fa-map-marker-alt"></i> <strong>Birthplace:</strong> Punjab</li>
+      <li><i class="fas fa-globe"></i> <strong>Roots:</strong> Bihar</li>
+      <li><i class="fas fa-location-dot"></i> <strong>Current Location:</strong> Delhi</li>
+      <li><i class="fas fa-school"></i> <strong>Education:</strong> Primary education in Punjab; currently pursuing higher studies in Delhi</li>
+    </ul>
 
-    <p>Creativity has always been close to me — I’ve worked as an actor for a YouTube channel, once managed my own channel, and picked up skills in writing, editing, and content creation along the way.</p>
+    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <ul>
+      <li><i class="fas fa-headset"></i> 1 year and 7 months in <strong>Customer Support</strong></li>
+      <li><i class="fas fa-comments"></i> Strong <strong>communication</strong> and <strong>problem-solving</strong> skills</li>
+      <li><i class="fas fa-file-excel"></i> Completed <strong>Advanced Excel</strong> course</li>
+      <li><i class="fas fa-tools"></i> Skilled in <strong>Microsoft Office tools</strong> (Excel, Word, PowerPoint, etc.)</li>
+    </ul>
 
-    <p>A couple of personal milestones I’m proud of: in 2023, I bought myself a gaming laptop from my own earnings, and recently I purchased a bike, both of which hold special value for me.</p>
+    <h2><i class="fas fa-lightbulb"></i> Creative Background</h2>
+    <ul>
+      <li><i class="fas fa-video"></i> Actor in a YouTube channel</li>
+      <li><i class="fas fa-user-edit"></i> Managed my <strong>own channel</strong> with full content flow</li>
+      <li><i class="fas fa-pen-nib"></i> Skilled in <strong>video editing</strong>, <strong>writing</strong>, and <strong>content creation</strong></li>
+      <li><i class="fas fa-paint-brush"></i> Creativity is my favorite outlet for self-expression</li>
+    </ul>
 
-    <p>Outside of work and studies, I’m passionate about fitness, gyming, and bike riding. I also love creating videos, not as a profession, but as something that satisfies me creatively.</p>
+    <h2><i class="fas fa-star"></i> Personal Milestones</h2>
+    <ul>
+      <li><i class="fas fa-laptop"></i> Bought a <strong>gaming laptop</strong> in 2023 with my own earnings</li>
+      <li><i class="fas fa-motorcycle"></i> Recently purchased a <strong>bike</strong> — a proud moment of independence</li>
+    </ul>
 
-    <p>I enjoy spending time alone, reflecting, and exploring different experiences in life. My goal is to learn from every field I step into and grow as an individual.</p>
+    <h2><i class="fas fa-heartbeat"></i> Passions & Interests</h2>
+    <ul>
+      <li><i class="fas fa-dumbbell"></i> Passionate about <strong>fitness and gyming</strong></li>
+      <li><i class="fas fa-road"></i> Love <strong>bike riding</strong> and adventure</li>
+      <li><i class="fas fa-clapperboard"></i> Enjoy <strong>video creation</strong> for creative satisfaction</li>
+      <li><i class="fas fa-user-circle"></i> Value <strong>reflection and alone time</strong></li>
+    </ul>
 
-    <a href="index.html">← Back to Home</a>
+    <h2><i class="fas fa-bullseye"></i> Vision & Goals</h2>
+    <ul>
+      <li><i class="fas fa-brain"></i> Committed to <strong>continuous learning</strong> in every field</li>
+      <li><i class="fas fa-user-graduate"></i> Strive to grow into a <strong>well-rounded individual</strong></li>
+      <li><i class="fas fa-chart-line"></i> Blend <strong>creativity, skills, and curiosity</strong> to make an impact</li>
+    </ul>
+
+    <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
   </div>
 </body>
 </html>

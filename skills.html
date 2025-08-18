@@ -1,30 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Skills | Sourav Singh</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   <style>
-    body{margin:0;font-family:'Segoe UI',sans-serif;background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;background-size:cover;color:#fff;}
-    .overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:-1;}
-    .content{max-width:800px;margin:60px auto;padding:30px;background:rgba(255,255,255,0.05);border-radius:15px;backdrop-filter:blur(10px);}
-    h1{color:#00e6e6;text-align:center;margin-bottom:20px;}
-    ul{color:#ddd;line-height:1.8;}
-    a{display:block;text-align:center;margin-top:20px;text-decoration:none;color:#00e6e6;}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      line-height: 1.7;
+      animation: slideUp 1.4s ease;
+    }
+    h1 {
+      text-align: center;
+      color: #00e6e6;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      animation: fadeInDown 1.2s ease;
+    }
+    h2 {
+      color: #00e6e6;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    p, ul {
+      color: #ddd;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+    ul {
+      margin-top: 8px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 24px;
+    }
+    ul li::before {
+      content: "\f00c"; /* check icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: #00e6e6;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #00e6e6;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @media (max-width: 768px) {
+      .content {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="overlay"></div>
+
   <div class="content">
-    <h1>Skills</h1>
+    <h1><i class="fas fa-briefcase"></i> Skills & Expertise</h1>
+
+    <p>
+      Explore the skills I've developed through real-world experience,
+      certifications, and passion-driven learning. I strive to combine
+      technical expertise with creativity to create value and make an impact.
+    </p>
+
+    <h2><i class="fas fa-chart-bar"></i> Data Analysis & Reporting</h2>
     <ul>
-      <li>Certified in <b>Advanced Excel</b> (Pivot Tables, Macros, VBA)</li>
-      <li>Expert in <b>AI Tools & Prompt Engineering</b></li>
-      <li>Strong knowledge of <b>MIS Reporting</b> & data analysis</li>
-      <li>Good at <b>Data Visualization</b> & dashboard creation</li>
-      <li>Hands-on experience in <b>Customer Support Systems</b></li>
+      <li>Certified in Advanced Excel – including Pivot Tables, Macros, and VBA automation</li>
+      <li>Proficient in MIS Reporting with a deep understanding of data structures</li>
+      <li>Strong analytical mindset with the ability to translate data into actionable insights</li>
+      <li>Expertise in data visualization and dashboard creation using Excel & PowerPoint</li>
     </ul>
-    <a href="index.html">← Back to Home</a>
+
+    <h2><i class="fas fa-robot"></i> AI Tools & Prompt Engineering</h2>
+    <ul>
+      <li>Skilled in leveraging modern AI tools for productivity, automation, and creativity</li>
+      <li>Experienced in Prompt Engineering for tools like ChatGPT, Midjourney, and more</li>
+      <li>Constantly exploring new ways to integrate AI in everyday workflows</li>
+    </ul>
+
+    <h2><i class="fas fa-comments"></i> Communication & Customer Support</h2>
+    <ul>
+      <li>Over 1 year and 7 months of experience in customer support</li>
+      <li>Strong communication and problem-solving abilities</li>
+      <li>Hands-on with various Customer Support Systems, offering quick and empathetic solutions</li>
+    </ul>
+
+    <h2><i class="fas fa-microsoft"></i> Microsoft Office Suite</h2>
+    <ul>
+      <li>Skilled in Microsoft Excel, Word, and PowerPoint</li>
+      <li>Experienced in building professional reports, documents, and presentations</li>
+    </ul>
+
+    <h2><i class="fas fa-paint-brush"></i> Creative & Multimedia Skills</h2>
+    <ul>
+      <li>Video Editing and Content Creation for YouTube and personal projects</li>
+      <li>Skilled in writing scripts, storyboarding, and managing content flow</li>
+      <li>Background in acting and channel management — blending creativity with technical skills</li>
+    </ul>
+
+    <h2><i class="fas fa-fire"></i> Personal Strengths & Values</h2>
+    <ul>
+      <li>Quick learner with a hunger for growth and exploration</li>
+      <li>Value self-reflection, independence, and continuous improvement</li>
+      <li>Thrive on combining creativity, technology, and curiosity to solve problems and create impact</li>
+    </ul>
+
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
   </div>
 </body>
 </html>
